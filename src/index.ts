@@ -26,6 +26,7 @@ employee =
 let pid: number | string
 pid = '22'
 
+
 //Enum
 
 enum Direction1 {
@@ -47,16 +48,16 @@ console.log(Direction2.Down);
 
 //Objects
 
-type user = {
+type User = {
     id: number;
     name: string
 }
 
-let user1: user = {
+const user: User = {
     id: 1,
-    name: 'John'
+    name: "John"
 }
 
-console.log(user1);
+
 
 export { };
