@@ -66,14 +66,13 @@ let cid: any = 1
 let customerId = cid as number
 console.log(customerId);
 
-// FUNCTIONS
+// Functions
 
 function addNum(x: number, y: number): number {
     return x + y
 }
 
 console.log(addNum(1, 2));
-
 
 
 export { };
