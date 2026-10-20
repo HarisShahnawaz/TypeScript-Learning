@@ -72,7 +72,39 @@ function addNum(x: number, y: number): number {
     return x + y
 }
 
-console.log(addNum(1, 2));
+//void 
+
+function log(message: string | number): void {
+    console.log(message);
+
+
+}
+
+//Interface
+
+
+interface Userinterface {
+    readonly id: number;
+    name: string;
+    age?: number
+}
+
+const user1: Userinterface = {
+    id: 1,
+    name: "John"
+
+}
+
+interface Mathfunc {
+    (x: number, y: number): number
+
+}
+const add: Mathfunc = (x: number, y: number): number => {
+    return x + y
+}
+
+
+
 
 
 export { };
