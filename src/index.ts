@@ -111,9 +111,16 @@ class Person {
 
     constructor(id: number, name: string) {
         this.id = id;
-        this.name = name;
+        this.name = name
     }
+
 }
+
+const brad = new Person(1, 'Brad Traver')
+const mike = new Person(2, 'Mike Jordan')
+
+
+console.log(brad, mike);
 
 
 

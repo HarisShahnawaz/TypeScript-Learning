@@ -27,5 +27,47 @@ var Direction1;
     Direction1[Direction1["Left"] = 3] = "Left";
     Direction1[Direction1["Right"] = 4] = "Right";
 })(Direction1 || (Direction1 = {}));
-console.log(Direction1.Up);
+var Direction2;
+(function (Direction2) {
+    Direction2["Up"] = "UP";
+    Direction2["Down"] = "DOWN";
+    Direction2["Left"] = "LEFT";
+    Direction2["Right"] = "RIGHT";
+})(Direction2 || (Direction2 = {}));
+console.log(Direction2.Down);
+const user = {
+    id: 1,
+    name: "John"
+};
+// type Assertion
+let cid = 1;
+// let customerId = <number>cid
+let customerId = cid;
+console.log(customerId);
+// Functions
+function addNum(x, y) {
+    return x + y;
+}
+//void 
+function log(message) {
+    console.log(message);
+}
+const user1 = {
+    id: 1,
+    name: "John"
+};
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
+//Classes
+class Person {
+    id;
+    name;
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+const brad = new Person(1, 'Brad Traver');
+const mike = new Person(2, 'Mike Jordan');
+console.log(brad, mike);
 //# sourceMappingURL=index.js.map
