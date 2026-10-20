@@ -99,8 +99,20 @@ interface Mathfunc {
     (x: number, y: number): number
 
 }
-const add: Mathfunc = (x: number, y: number): number => {
-    return x + y
+const add: Mathfunc = (x: number, y: number): number => x + y
+const sub: Mathfunc = (x: number, y: number): number => x - y
+
+
+//Classes
+
+class Person {
+    id: number;
+    name: string;
+
+    constructor(id: number, name: string) {
+        this.id = id;
+        this.name = name;
+    }
 }
 
 
