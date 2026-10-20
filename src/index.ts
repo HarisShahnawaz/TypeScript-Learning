@@ -118,7 +118,7 @@ class Person {
 
 const brad = new Person(1, 'Brad Traver')
 const mike = new Person(2, 'Mike Jordan')
-
+brad.id = 5
 
 console.log(brad, mike);
 
