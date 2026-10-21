@@ -150,5 +150,7 @@ let numArray = getArray<number>([1, 2, 3, 4, 5])
 let strArray = getArray<string>(['haris', 'shahnawaz', 'shawn', 'jordan'])
 
 strArray.push('hello')
+numArray.push(1)
+
 
 export { };

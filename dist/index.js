@@ -88,4 +88,5 @@ function getArray(items) {
 let numArray = getArray([1, 2, 3, 4, 5]);
 let strArray = getArray(['haris', 'shahnawaz', 'shawn', 'jordan']);
 strArray.push('hello');
+numArray.push(1);
 //# sourceMappingURL=index.js.map
