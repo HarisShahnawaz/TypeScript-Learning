@@ -66,9 +66,19 @@ class Person {
         this.id = id;
         this.name = name;
     }
+    register() {
+        return `${this.name} is now registered`;
+    }
 }
 const brad = new Person(1, 'Brad Traver');
 const mike = new Person(2, 'Mike Jordan');
-brad.id = 5;
-console.log(brad, mike);
+class Employee extends Person {
+    position;
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(1, 'shawn', 'developer');
+console.log(emp.name);
 //# sourceMappingURL=index.js.map

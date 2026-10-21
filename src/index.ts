@@ -102,10 +102,16 @@ interface Mathfunc {
 const add: Mathfunc = (x: number, y: number): number => x + y
 const sub: Mathfunc = (x: number, y: number): number => x - y
 
+interface Personinterface {
+    id: number;
+    name: string;
+    register(): string;
+}
+
 
 //Classes
 
-class Person {
+class Person implements Personinterface {
     id: number;
     name: string;
 
@@ -113,17 +119,29 @@ class Person {
         this.id = id;
         this.name = name
     }
-
+    register() {
+        return `${this.name} is now registered`
+    }
 }
 
 const brad = new Person(1, 'Brad Traver')
 const mike = new Person(2, 'Mike Jordan')
-brad.id = 5
-
-console.log(brad, mike);
 
 
+class Employee extends Person {
+    position: string;
+    constructor(id: number, name: string, position: string) {
+        super(id, name)
+        this.position = position
+    }
+}
 
+const emp = new Employee(1, 'shawn', 'developer')
+console.log(emp.name);
+
+//Generics
+
+function 
 
 
 export { };
